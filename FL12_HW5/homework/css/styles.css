@@ -1,17 +1,7 @@
-/*
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- */
-:root {
-  --bg-color--dark: #0b192f;
-  --bg-color--header: #024161;
-  --link: #fff;
-  --link--hover: #1f52a4;
-  --bg-footer-color: #024161;
-}
-
 body {
-  font-family: roboto;
+  font-family: roboto;  
+  color: #fff;
+  background: #0b192f;  
 }
 .post-1 {
 	background: #9d27b0;
@@ -29,4 +19,414 @@ body {
 	background: #2d95bb;
 }
 
-/* Your styles go here */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;  
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #024161;
+  margin-bottom: 30px;
+  min-height: 100px;  
+}
+
+.header-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2.5%;   
+}
+
+.logo{
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none; 
+}
+
+.logo span{
+  color: #d12767;
+}
+
+.main-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  width: 35%;  
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+}
+
+.nav-link{
+  display: block;
+  color: #fff;
+  text-decoration: none;  
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.button:hover{
+  background: #1f52a4;
+  cursor: pointer;
+}
+
+.header-post{
+  background: url(../img/post0.jpg) no-repeat center top/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.header-title{
+  padding: 25% 0 0 3%;
+  font-size: 60px;
+  font-weight: 200;
+  letter-spacing: 0.02em;
+}
+
+.header-text{
+  color: #fff;
+  opacity: 0.5;
+  letter-spacing: 0.01em;
+  font-size: 19px;
+  font-weight: 200;
+  max-width: 70%;
+  margin: 0 0 5% 3%;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content{
+  width: 75%;
+}
+
+.sidebar{
+  width: 23%;
+}
+
+.main-posts{
+  display: flex;  
+}
+
+.post-image{
+  width: 49.5%;  
+}
+
+.post-image:hover{
+  cursor: pointer;  
+  opacity: 0.7;
+}
+
+.post{
+  width: 50.5%;  
+  padding: 20px 20px 20px 40px;
+}
+
+.post:hover{
+  cursor: pointer;  
+  opacity: 0.7;
+}
+
+.post-block{
+  display: flex;
+}
+
+.post-title{
+  font-size: 48px;
+  font-weight: 200;
+  padding-top: 20px;
+}
+
+.post-date{  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0.15; 
+}
+
+.day{
+  font-size: 60px;
+  font-weight: 200;
+
+}
+
+.month{
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.post-text{
+  width: 80%;
+  margin-top: 20px;
+  line-height: 31px;
+}
+
+.post-text{
+  margin-top: 20px;
+  line-height: 31px;
+  width: 81%;
+}
+
+.main-posts:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.main-posts:nth-child(even) .post-block{
+  flex-direction: row-reverse;
+}
+
+.main-posts:nth-child(even) .post{
+  padding: 25px 50px 25px 45px;
+}
+
+.main-posts:nth-child(even) .post-text{
+  width: 81%;
+  margin-left: 65px;
+}
+
+.last-post{
+  display: flex;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.post-post-5{  
+  padding: 20px 20px 20px 40px;
+}
+
+.last-post .post-date {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.last-post:hover{
+  cursor: pointer;  
+  opacity: 0.7;
+}
+
+.sidebar-post{  
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.sidebar-image{
+  width: 100%;
+}
+
+.sidebar-block{
+  padding: 50px 35px;
+  color: black;
+}
+
+.sidebar-title{
+  font-size: 32px;
+}
+
+.sidebar-text{
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer{
+  background-color: #024161;  
+  min-height: 120px;
+  margin-top: 30px; 
+  padding: 0 35px; 
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.7;
+  font-weight: 200;
+}
+
+.copyright,
+.author{
+  margin-top: 40px;
+  white-space: pre-line;
+  line-height: 25px;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+@media (max-width: 786px) {
+  .main{
+    width: 98%;
+}
+.header {
+  justify-content: center;
+}
+.header-logo {
+  display: flex;
+  flex-direction: column;
+}
+#mobile-menu {
+  display: block;
+  color: #fff;
+  font-size: 3vw;
+  font-weight: 200;
+  margin: 6vw 0 10vw 0;
+}
+.header-logo .logo {
+  font-size: 10vw;
+  padding-bottom: 9vw;  
+}
+.main-menu {
+  display: none;
+}
+.header-title {
+  font-size: 5vw;
+  font-weight: 200;
+  letter-spacing: 0.015em;
+}
+.header-text{
+  font-size: 1.3vw;
+  font-weight: 200;
+  line-height: 1.3em;
+  margin-top: 2vw;
+}
+.post-title{
+  font-size: 3vw;
+  font-weight: 200;
+  letter-spacing: 0.015em;
+}
+.post-text{
+  font-size: 1.4vw;
+  line-height: 1.3em;
+  font-weight: 200;
+  margin-top: 0;
+}
+.main-posts{
+  flex-wrap: wrap;
+}
+.post-image{
+  width: 100%;
+}
+.post{
+  width: 100%;
+  min-height: 335px;
+}
+.post-title{
+  font-size: 7vw;
+  font-weight: 200;
+}
+.post-text{
+  font-size: 2.5vw;
+  margin-top: 4vw;
+}
+.main-posts:nth-child(even) .post-block{
+  flex-direction: row;
+  text-align: left;
+}
+.main-posts:nth-child(even) .post-text{
+  text-align: left;
+  margin-left: 0;
+}
+.last-post{
+  flex-direction: column;
+}
+.last-post .post-date{
+  margin-top: 2vw;
+}
+.post-post-5 {
+  padding: 20px 40px 20px 40px;
+}
+footer{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.author{
+  margin-top: 0;
+  margin-bottom: 4vw;
+}
+.sidebar{
+  width: 35%;
+  margin-left: 3vw;
+}
+.sidebar-title{
+  font-size: 3vw;
+  font-weight: 300;
+}
+.sidebar-text{
+  font-size: 2vw;
+  font-weight: 300;
+}
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  #mobile-menu {
+    font-size: 6vw;  
+}
+.header-title {
+  font-size: 12vw;
+  margin-left: 8%;
+  padding-left: 0;
+}
+.header-text {
+  font-size: 3vw;
+  max-width: 82%;
+  margin-left: 8%;
+  margin-top: 3vw;
+  margin-bottom: 10vw;
+}
+.container {
+  flex-direction: column;
+}
+.main-content{
+  width: 98%;
+  margin: 0 auto;
+}
+.post{
+  width: 100%;
+  min-height: 275px;
+}
+.post-title{
+  font-size: 10vw;
+  font-weight: 200;
+}
+.post-text{
+  font-size: 3.5vw;
+  margin-top: 4vw;
+}
+.content-box, .sidebar {
+  width: 98%;
+  margin: 0 auto;
+}
+.sidebar-title {
+  font-size: 6vw;
+  font-weight: 300;
+}
+.sidebar-text {
+  font-size: 4vw;
+  font-weight: 300;
+}
+.author{
+  margin-bottom: 6vw;
+}
+}
