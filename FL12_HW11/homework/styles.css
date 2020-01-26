@@ -1,0 +1,38 @@
+ul {
+    list-style-type:none;
+    font-size: 22;
+}
+
+.file i {
+    color: #BBBBBB;
+}
+
+.folder i {
+    color: rgb(214, 175, 18);
+}
+
+.empty {
+    font-style: italic;
+    cursor: pointer;
+}
+.folder {
+    cursor: pointer;
+}
+
+.file:hover,
+.folder:hover,
+.empty:hover {
+    background-color: #e4e3e3;
+}
+
+.closed {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.material-icons {
+    vertical-align: bottom;
+}
